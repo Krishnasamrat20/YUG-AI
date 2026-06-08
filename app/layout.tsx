@@ -1,0 +1,20 @@
+﻿import type { Metadata } from 'next';
+import type { ReactNode } from 'react';
+import './globals.css';
+import Footer from '@/components/Footer';
+
+export const metadata: Metadata = {
+  title: 'YUG AI — AI Data Annotation & Development Partner',
+  description: 'High-quality image, video, text, audio annotation and AI development delivered by trained specialists.'
+};
+
+export default function RootLayout({ children }: { children: ReactNode }) {
+  return (
+    <html lang="en">
+      <body className="min-h-screen text-white site-texture" style={{backgroundColor: 'var(--bg-dark)'}}>
+        {children}
+        <Footer />
+      </body>
+    </html>
+  );
+}
