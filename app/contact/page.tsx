@@ -23,11 +23,15 @@ export default function ContactPage() {
               </div>
               <div className="card p-6">
                 <p className="text-sm uppercase tracking-[0.28em] text-slate-400">WhatsApp</p>
-                <p className="mt-2 text-lg text-white">+91 8810204262</p>
+                <a href="https://wa.me/918810204262" className="mt-2 text-lg text-white" target="_blank" rel="noopener noreferrer">
+                  Chat on WhatsApp
+                </a>
               </div>
               <div className="card p-6">
                 <p className="text-sm uppercase tracking-[0.28em] text-slate-400">LinkedIn</p>
-                <p className="mt-2 text-lg text-white">https://www.linkedin.com/company/yugai-live</p>
+                <a href="https://www.linkedin.com/company/yugai-live" className="mt-2 text-lg text-white" target="_blank" rel="noopener noreferrer">
+                  Connect on LinkedIn
+                </a>
               </div>
             </div>
             <div className="card border-cyan-500/10 bg-cyan-500/5 p-6 text-slate-200">
