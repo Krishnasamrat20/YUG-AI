@@ -33,6 +33,21 @@ export default function ContactPage() {
                   Connect on LinkedIn
                 </a>
               </div>
+              
+              <div className="card p-6">
+                <p className="text-sm uppercase tracking-[0.28em] text-slate-400">
+                  Address
+                </p>
+
+                <a
+                  href="https://maps.google.com/?q=Noida,Uttar+Pradesh,India"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="mt-2 text-lg text-white hover:text-sky-300 transition-colors"
+                >
+                  Noida, Uttar Pradesh
+                </a>
+              </div>
             </div>
             <div className="card border-cyan-500/10 bg-cyan-500/5 p-6 text-slate-200">
               <p className="text-sm uppercase tracking-[0.28em] text-cyan-200">When your message is received</p>
