@@ -1,10 +1,10 @@
 import Link from 'next/link';
 
 const services = [
-  { href: '/services/ai-evaluation', label: 'AI Evaluation' },
-  { href: '/services/rlhf', label: 'RLHF' },
+  { href: '/services/llm-evaluation', label: 'LLM Evaluation' },
+  { href: '/industries/reinforcement-learning-human-feedback', label: 'RLHF' },
   { href: '/services/data-annotation', label: 'Data Annotation' },
-  { href: '/services/quality-assurance', label: 'Quality Assurance' }
+  { href: 'quality-assurance', label: 'Quality Assurance' }
 ];
 
 export default function Footer() {
