@@ -18,9 +18,16 @@ export default function ContactPage() {
             </p>
             <div className="grid gap-4 sm:grid-cols-2">
               <div className="card p-6">
-                <p className="text-sm uppercase tracking-[0.28em] text-slate-400">Email</p>
-                <p className="mt-2 text-lg text-white">hello@yugai.live</p>
-              </div>
+                <p className="text-sm uppercase tracking-[0.28em] text-slate-400">
+                  Email
+                </p>
+                <a
+                  href="mailto:hello@yugai.live"
+                  className="mt-2 text-lg text-white hover:text-sky-300 transition-colors"
+                >
+                  hello@yugai.live
+                </a>
+                </div>
               <div className="card p-6">
                 <p className="text-sm uppercase tracking-[0.28em] text-slate-400">WhatsApp</p>
                 <a href="https://wa.me/918810204262" className="mt-2 text-lg text-white" target="_blank" rel="noopener noreferrer">
