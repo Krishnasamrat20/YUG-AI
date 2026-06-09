@@ -10,27 +10,32 @@ const founders = [
   {
     name: 'Priyesh Singh',
     role: 'Chief Operating Officer',
-    detail: 'Co-founder driving AI strategy, data pipelines, and delivery.',
+    detail:
+      'Leads operations, client delivery, workflow optimization, and AI data production at scale.',
     image: p1
   },
   {
     name: 'Krishna Samrat Bajpai',
     role: 'Chief Executive Officer',
-    detail: 'Co-founder overseeing product vision and technical execution.',
+    detail:
+      'Drives company vision, business strategy, partnerships, and overall growth initiatives.',
     image: p2
   },
   {
     name: 'Shreshth Bajpai',
     role: 'Head of Growth',
-    detail: 'Building partnerships, client growth, and go-to-market strategy.',
+    detail:
+      'Focused on market expansion, client acquisition, strategic partnerships, and branding.',
     image: p3
   },
   {
     name: 'Abhishek Singh',
     role: 'Chief Technology Officer',
-    detail: 'Leading engineering, QA systems, and delivery operations.',
+    detail:
+      'Leads engineering, AI development, automation systems, and technical architecture.',
     image: p4
   }
+
 ];
 
 export default function AboutPage() {
@@ -83,23 +88,36 @@ export default function AboutPage() {
           </div>
         </div>
 
-        <div className="mt-14 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
-          {founders.map((founder) => (
-            <div key={founder.name} className="group rounded-[2rem] border border-white/10 bg-slate-950/95 p-8 text-center shadow-soft transition duration-300 hover:-translate-y-1">
-              <div className="mx-auto mb-6 h-32 w-32 overflow-hidden rounded-full bg-transparent ring-1 ring-white/10 transition-transform duration-300 group-hover:scale-110">
+        <div className="mt-14 grid gap-8 sm:grid-cols-2 lg:grid-cols-4">
+          {founders.map((founder, index) => (
+            <div
+              key={founder.name}
+              className="floating-card group relative overflow-hidden rounded-[2rem] border border-white/10 bg-white/5 backdrop-blur-md p-8 text-center shadow-soft transition-all duration-500 hover:scale-105"
+              style={{
+                animationDelay: `${index * 0.8}s`,
+              }}
+            >
+              <div className="mx-auto mb-6 h-36 w-36 overflow-hidden rounded-full ring-2 ring-sky-500/30">
                 <Image
                   src={founder.image}
                   alt={founder.name}
-                  width={128}
-                  height={128}
-                  className="image-transition h-full w-full object-cover bg-transparent"
+                  width={144}
+                  height={144}
+                  className="h-full w-full object-cover transition duration-500 group-hover:scale-110"
                 />
               </div>
-              <p className="text-xl font-semibold text-white">{founder.name}</p>
-              <p className="mt-2 text-sm text-slate-400">{founder.role}</p>
-              {founder.detail ? (
-                <p className="mt-3 text-sm text-slate-300 max-w-xs mx-auto">{founder.detail}</p>
-              ) : null}
+
+              <h3 className="text-xl font-semibold text-white">
+                {founder.name}
+              </h3>
+
+              <p className="mt-2 text-sky-400 font-medium">
+                {founder.role}
+              </p>
+
+              <p className="mt-4 text-sm leading-7 text-slate-300">
+                {founder.detail}
+              </p>
             </div>
           ))}
         </div>

@@ -9,7 +9,7 @@ import p4 from '../p4.png';
 const services = [
   { href: '/services/data-annotation', title: 'Data Annotation', description: 'High-accuracy labeling for image, video, text, and audio.' },
   { href: '/services/ai-data-collection', title: 'AI Data Collection', description: 'Custom data capture and dataset creation.' },
-  { href: '/services/ai-evaluation', title: 'AI Evaluation', description: 'Model benchmarking, edge-case scoring, and review.' },
+  { href: '/services/llm-evaluation', title: 'LLM Evaluation', description: 'Model benchmarking, edge-case scoring, and review.' },
   { href: '/services/ai-development', title: 'AI Development', description: 'End-to-end ML products and inference pipelines.' },
   
 ];
@@ -34,14 +34,17 @@ const founders = [
     name: 'Priyesh Singh',
     role: 'Chief Operating Officer',
     image: p1,
-    experience: 'Over 1 year of management experience in operations, QA leadership, and team delivery.'
+    experience: <ul><li>Operations</li>
+    <li>Quality systems</li>
+    <li>Delivery Management</li></ul>
   },
   {
     name: 'Krishna Samrat Bajpai',
     role: 'Chief Executive Officer',
     image: p2,
-    experience: 'Over 1 year of management experience in strategy, client delivery, and AI program leadership.'
-  }
+    experience: <ul><li>Client Partnerships</li>
+    <li>Strategic Planning</li>
+    <li>AI Program Leadership</li></ul>}
 ];
 
 const managers = [
@@ -49,13 +52,17 @@ const managers = [
     name: 'Shreshth Bajpai',
     role: 'Head of Growth',
     image: p3,
-    experience: 'Over 1 year leading growth strategy, partnerships, and revenue enablement.'
+    experience: <ul><li>Growth Strategy</li>
+    <li>Partnerships</li>
+    <li>Revenue Enablement</li></ul>
   },
   {
     name: 'Abhishek Singh',
     role: 'Chief Technology Officer',
     image: p4,
-    experience: 'Over 1 year leading engineering, platform architecture, and AI systems development.'
+    experience: <ul><li>Engineering</li>
+    <li>Platform Architecture</li>
+    <li>AI Systems Development</li></ul>
   }
 ];
 
@@ -121,10 +128,10 @@ export default function Home() {
         <div className="container mt-10 grid gap-4 rounded-[2rem] border border-white/10 bg-slate-950/85 p-6 text-slate-300 shadow-soft md:grid-cols-[1fr,1.5fr]">
           <div className="col-span-full">
             <div className="flex flex-wrap items-center gap-4">
-              <span className="text-sm font-semibold uppercase tracking-[0.18em] text-gold">✓ AI Evaluation</span>
+              <span className="text-sm font-semibold uppercase tracking-[0.18em] text-gold">✓ LLM Evaluation</span>
               <span className="text-sm font-semibold uppercase tracking-[0.18em] text-gold">✓ Data Annotation</span>
               <span className="text-sm font-semibold uppercase tracking-[0.18em] text-gold">✓ Human Feedback</span>
-              <span className="text-sm font-semibold uppercase tracking-[0.18em] text-gold">✓ Multilingual AI</span>
+              <span className="text-sm font-semibold uppercase tracking-[0.18em] text-gold">✓ RLHF</span>
               <span className="text-sm font-semibold uppercase tracking-[0.18em] text-gold">✓ Quality Assurance</span>
             </div>
           </div>
@@ -230,7 +237,7 @@ export default function Home() {
                 </div>
                 <p className="text-lg font-semibold text-white">{founder.name}</p>
                 <p className="mt-2 text-sm text-slate-400">{founder.role}</p>
-                <p className="mt-3 text-sm text-slate-300 max-w-lg mx-auto">{founder.experience}</p>
+                <div className="mt-3 text-sm text-slate-300 max-w-lg mx-auto">{founder.experience}</div>
               </div>
             ))}
           </div>
@@ -257,7 +264,7 @@ export default function Home() {
               </div>
               <p className="text-lg font-semibold text-white">{manager.name}</p>
               <p className="mt-2 text-sm text-slate-400">{manager.role}</p>
-              <p className="mt-3 text-sm text-slate-300 max-w-lg mx-auto">{manager.experience}</p>
+              <div className="mt-3 text-sm text-slate-300 max-w-lg mx-auto">{manager.experience}</div>
             </div>
           ))}
         </div>
