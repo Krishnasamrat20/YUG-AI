@@ -27,11 +27,7 @@ export default function ContactPage() {
               </div>
               <div className="card p-6">
                 <p className="text-sm uppercase tracking-[0.28em] text-slate-400">LinkedIn</p>
-                <p className="mt-2 text-lg text-white">linkedin.com/company/yug-ai</p>
-              </div>
-              <div className="card p-6">
-                <p className="text-sm uppercase tracking-[0.28em] text-slate-400">Calendly</p>
-                <p className="mt-2 text-lg text-white">calendly.com/yug-ai</p>
+                <p className="mt-2 text-lg text-white">https://www.linkedin.com/company/yugai-live</p>
               </div>
             </div>
             <div className="card border-cyan-500/10 bg-cyan-500/5 p-6 text-slate-200">
