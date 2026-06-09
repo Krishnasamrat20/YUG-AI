@@ -5,10 +5,10 @@ export default function AIEvaluationPage() {
   return (
     <main>
       <GlobalNav />
-      <HeroBanner title="AI Evaluation" subtitle="Model benchmarking and review" image="/images/img_quality.jpg" height={140} />
+      <HeroBanner title="LLM Evaluation" subtitle="Model benchmarking and review" image="/images/img_quality.jpg" height={140} />
       <section className="container py-12">
         <div className="space-y-4 max-w-3xl">
-          <p className="text-sm uppercase tracking-[0.28em] text-slate-400">AI Evaluation</p>
+          <p className="text-sm uppercase tracking-[0.28em] text-slate-400">LLM Evaluation</p>
           <h1 className="text-5xl font-semibold text-white">Measure model quality with real evaluation workflows.</h1>
           <p className="text-lg leading-8 text-slate-300">
             Our evaluation service compares model outputs against ground truth, tests for edge cases, and identifies failure modes before deployment.

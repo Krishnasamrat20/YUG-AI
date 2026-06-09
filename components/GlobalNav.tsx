@@ -4,7 +4,7 @@ import logo from '../logo.jpg';
 
 const links = [
   { href: '/services', label: 'Services' },
-  { href: '/industries', label: 'Industries' },
+  { href: '/industries', label: 'Solutions' },
   { href: '/about', label: 'About' },
   { href: '/quality-assurance', label: 'Quality' },
   { href: '/portfolio', label: 'Portfolio' },

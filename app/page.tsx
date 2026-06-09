@@ -6,11 +6,17 @@ import p2 from '../p2.png';
 import p3 from '../p3.png';
 import p4 from '../p4.png';
 
+
 const services = [
   { href: '/services/data-annotation', title: 'Data Annotation', description: 'High-accuracy labeling for image, video, text, and audio.' },
   { href: '/services/ai-data-collection', title: 'AI Data Collection', description: 'Custom data capture and dataset creation.' },
   { href: '/services/llm-evaluation', title: 'LLM Evaluation', description: 'Model benchmarking, edge-case scoring, and review.' },
   { href: '/services/ai-development', title: 'AI Development', description: 'End-to-end ML products and inference pipelines.' },
+  {href: '/services/rlhf-human-feedback',
+  title: "RLHF & Human Feedback",
+  description:
+    "Human preference collection, response ranking, reward modeling support, and feedback operations for LLM improvement."
+}
   
 ];
 
@@ -18,53 +24,22 @@ const serviceImages = ['/images/img_services.jpg', '/images/img_industries.jpg',
 
 const industries = [
   { href: '/industries/generalist', title: 'Generalist', description: 'General-purpose datasets and cross-domain labeling for broad model coverage.' },
-  { href: '/industries/autonomous-vehicles', title: 'Prompt-Writing', description: 'Crafting and curating high-quality prompts and instructions for LLMs and multimodal models.' },
-  { href: '/industries/surveillance-ai', title: 'Boundary box labeling', description: 'Bounding box annotation, object tracking, and event labeling for surveillance datasets.' },
-  { href: '/industries/ecommerce-ai', title: 'Reinforcement Learning using Human Feedback', description: 'Collecting human feedback and reward signals used in RLHF and ranking model pipelines.' },
-  { href: '/industries/healthcare-ai', title: 'IG entity reference', description: 'Entity linking, medical NER, and structured annotation for clinical and biomedical text.' },
-  { href: '/industries/retail-ai', title: 'Video annotation', description: 'Frame-by-frame labeling, activity detection, and shopper behavior annotation for retail analytics.' },
-  { href: '/industries/agriculture-ai', title: 'Audio annotation', description: 'Audio labeling for environmental monitoring, crop/animal sounds, and sensor audio datasets.' },
-  { href: '/industries/finance-ai', title: 'Text annotation', description: 'Financial document labeling, entity extraction, sentiment, and document classification.' },
-  { href: '/industries/robotics-ai', title: '3D point cloud annotation', description: '3D segmentation, point-cloud labeling, and pose estimation for robotics and autonomy.' },
-  { href: '/industries/other', title: 'Other', description: 'Custom annotation, research datasets, and niche modality workflows.' }
+  { href: '/industries/prompt-writing', title: 'Prompt-Writing', description: 'Crafting and curating high-quality prompts and instructions for LLMs and multimodal models.' },
+  { href: '/industries/boundary-box-labeling', title: 'Boundary box labeling', description: 'Bounding box annotation, object tracking, and event labeling for surveillance datasets.' },
+  { href: '/industries/reinforcement-learning-human-feedback', title: 'Reinforcement Learning using Human Feedback', description: 'Collecting human feedback and reward signals used in RLHF and ranking model pipelines.' },
+  { href: '/industries/ig-entity-reference', title: 'IG entity reference', description: 'Entity linking, medical NER, and structured annotation for clinical and biomedical text.' },
+  { href: '/industries/video-annotation', title: 'Video annotation', description: 'Frame-by-frame labeling, activity detection, and shopper behavior annotation for retail analytics.' },
+  { href: '/industries/audio-annotation', title: 'Audio annotation', description: 'Audio labeling for environmental monitoring, crop/animal sounds, and sensor audio datasets.' },
+  { href: '/industries/text-annotation', title: 'Text annotation', description: 'Financial document labeling, entity extraction, sentiment, and document classification.' },
+  { href: '/industries/3d-point-cloud-annotation', title: '3D point cloud annotation', description: '3D segmentation, point-cloud labeling, and pose estimation for robotics and autonomy.' },
+  { href: '/industries/healthcare-ai', title: 'Healthcare AI', description: 'Annotation for healthcare applications and medical imaging.' },
+  { href: '/industries/autonomous-vehicles', title: 'Autonomous Vehicles', description: 'Annotation for autonomous driving, including LiDAR, radar, and camera data.' },
+  { href: '/industries/other', title: 'Other', description: 'Custom annotation, research datasets, and niche modality workflows.' },
 ];
 
-const founders = [
-  {
-    name: 'Priyesh Singh',
-    role: 'Chief Operating Officer',
-    image: p1,
-    experience: <ul><li>Operations</li>
-    <li>Quality systems</li>
-    <li>Delivery Management</li></ul>
-  },
-  {
-    name: 'Krishna Samrat Bajpai',
-    role: 'Chief Executive Officer',
-    image: p2,
-    experience: <ul><li>Client Partnerships</li>
-    <li>Strategic Planning</li>
-    <li>AI Program Leadership</li></ul>}
-];
 
-const managers = [
-  {
-    name: 'Shreshth Bajpai',
-    role: 'Head of Growth',
-    image: p3,
-    experience: <ul><li>Growth Strategy</li>
-    <li>Partnerships</li>
-    <li>Revenue Enablement</li></ul>
-  },
-  {
-    name: 'Abhishek Singh',
-    role: 'Chief Technology Officer',
-    image: p4,
-    experience: <ul><li>Engineering</li>
-    <li>Platform Architecture</li>
-    <li>AI Systems Development</li></ul>
-  }
-];
+
+
 
 export default function Home() {
   return (
@@ -88,10 +63,10 @@ export default function Home() {
         <div className="container grid gap-12 lg:grid-cols-[1.1fr,0.9fr] lg:items-center animate-fade-in-up">
           <div className="space-y-6 max-w-2xl">
             <h1 className="section-title max-w-3xl text-white">
-              Human Intelligence for Better AI
+              AI Evaluation & Human Feedback Operations for Enterprise AI Teams
             </h1>
             <p className="text-xl leading-8 text-slate-300 sm:text-2xl">
-              We help AI teams evaluate models, improve datasets, and build reliable AI systems through annotation, human feedback, and quality assurance.
+              We help AI companies evaluate models, collect human feedback, improve datasets, and deliver reliable AI systems at scale.
             </p>
             <div className="flex flex-wrap gap-4">
               <Link href="/contact" className="btn-primary">
@@ -163,7 +138,7 @@ export default function Home() {
 
       <section className="container space-y-10 py-16 animate-fade-in-up">
         <div className="grid gap-4 max-w-3xl">
-          <p className="text-sm uppercase tracking-[0.28em] text-slate-400">What we offer</p>
+          <p className="text-sm uppercase tracking-[0.28em] text-slate-400">AI Evaluation & Human Feedback Services</p>
           <h2 className="text-4xl font-semibold text-white">Specialized services for AI data, evaluation, and product delivery.</h2>
         </div>
 
@@ -185,15 +160,106 @@ export default function Home() {
           ))}
         </div>
       </section>
+      <section className="container py-16">
+        <div className="text-center">
+          <p className="text-sm uppercase tracking-[0.28em] text-gold">
+            Why YUG AI
+          </p>
+
+          <h2 className="mt-4 text-4xl font-semibold text-white">
+            Built for Quality, Reliability, and Scale
+          </h2>
+        </div>
+
+        <div className="mt-12 grid gap-6 md:grid-cols-2 lg:grid-cols-4">
+          <div className="card p-8">
+            <h3 className="text-xl font-semibold text-white">
+              Human Expertise
+            </h3>
+            <p className="mt-3 text-slate-300">
+              Human judgment remains critical for AI systems, helping improve accuracy and handle complex edge cases.
+            </p>
+          </div>
+
+          <div className="card p-8">
+            <h3 className="text-xl font-semibold text-white">
+              Quality First
+            </h3>
+            <p className="mt-3 text-slate-300">
+              Multi-layer review workflows with reviewer validation and quality audits built into every project.
+            </p>
+          </div>
+
+          <div className="card p-8">
+            <h3 className="text-xl font-semibold text-white">
+              Multilingual Capability
+            </h3>
+            <p className="mt-3 text-slate-300">
+              Support for English, Hindi, and multiple Indian languages across annotation and evaluation workflows.
+            </p>
+          </div>
+
+          <div className="card p-8">
+            <h3 className="text-xl font-semibold text-white">
+              Reliable Delivery
+            </h3>
+            <p className="mt-3 text-slate-300">
+              Transparent communication, structured project management, and predictable delivery timelines.
+            </p>
+          </div>
+        </div>
+      </section>
+      
+
+      <section className="container py-16">
+        <div className="rounded-3xl border border-gold-15 bg-slate-950/80 p-10 text-center">
+          <p className="text-sm uppercase tracking-[0.28em] text-gold">
+            Start with a Pilot
+          </p>
+
+          <h2 className="mt-4 text-4xl font-semibold text-white">
+            Evaluate Our Quality Before Committing
+          </h2>
+
+          <p className="mt-4 max-w-2xl mx-auto text-slate-300">
+            Test our workflows with a small pilot project before scaling to a larger engagement.
+          </p>
+
+          <div className="mt-10 grid gap-4 md:grid-cols-4">
+            <div className="card p-5">
+              <h3 className="font-semibold text-white">Sample Batch</h3>
+            </div>
+
+            <div className="card p-5">
+              <h3 className="font-semibold text-white">QA Report</h3>
+            </div>
+
+            <div className="card p-5">
+              <h3 className="font-semibold text-white">Evaluation Summary</h3>
+            </div>
+
+            <div className="card p-5">
+              <h3 className="font-semibold text-white">Delivery Timeline</h3>
+            </div>
+          </div>
+
+          <Link
+            href="/contact"
+            className="btn-primary mt-10 inline-flex"
+          >
+            Request a Pilot Project
+          </Link>
+        </div>
+      </section>
 
       <section className="container space-y-10 py-16 animate-fade-in-up">
         <div className="flex flex-col gap-4 md:flex-row md:items-end md:justify-between">
           <div>
-            <p className="text-sm uppercase tracking-[0.28em] text-slate-400">Industry focus</p>
-            <h2 className="text-4xl font-semibold text-white">Built for healthcare, retail, autonomous systems, and more.</h2>
+            <p className="text-sm uppercase tracking-[0.28em] text-slate-400">Solution Focussed</p>
+            <h2 className="text-4xl font-semibold text-white">AI Evaluation & Human Feedback Services</h2>
           </div>
           <Link href="/industries" className="text-sm font-semibold text-gold transition hover:text-white">
-            Explore all industries →
+            Explore all Solutions →
           </Link>
         </div>
 
@@ -213,62 +279,7 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="container rounded-[2rem] border border-white/10 bg-white/5 p-8 shadow-soft py-16 animate-fade-in-up">
-        <div className="grid gap-10 lg:grid-cols-[1.1fr,0.9fr] lg:items-center">
-          <div className="space-y-5">
-            <p className="text-sm uppercase tracking-[0.28em] text-gold">Founders panel</p>
-            <h2 className="text-4xl font-semibold text-white">Meet the founders leading your AI delivery.</h2>
-            <p className="text-slate-300">Founders with hands-on experience in annotation operations, QA leadership, and AI engineering.</p>
-          </div>
-          <div className="grid gap-5 sm:grid-cols-2 lg:grid-cols-2">
-            {founders.map((founder) => (
-              <div
-                key={founder.name}
-                className="group relative rounded-3xl bg-slate-950/90 p-6 text-center shadow-[0_20px_80px_rgba(0,0,0,0.18)] transition duration-300 hover:-translate-y-1"
-              >
-                <div className="mx-auto mb-6 h-32 w-32 overflow-hidden rounded-full bg-transparent ring-1 ring-white/10 transition-transform duration-300 group-hover:scale-110 relative">
-                  <Image
-                    src={founder.image}
-                    alt={founder.name}
-                    width={128}
-                    height={128}
-                    className="image-transition h-full w-full object-cover bg-transparent"
-                  />
-                </div>
-                <p className="text-lg font-semibold text-white">{founder.name}</p>
-                <p className="mt-2 text-sm text-slate-400">{founder.role}</p>
-                <div className="mt-3 text-sm text-slate-300 max-w-lg mx-auto">{founder.experience}</div>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      <section className="container rounded-[2rem] border border-white/10 bg-white/5 p-8 shadow-soft py-16 animate-fade-in-up">
-        <div className="space-y-5">
-          <p className="text-sm uppercase tracking-[0.28em] text-gold">Manager panel</p>
-          <h2 className="text-4xl font-semibold text-white">Leadership managers</h2>
-          <p className="text-slate-300">Senior leadership responsible for business development and technical delivery.</p>
-        </div>
-        <div className="mt-10 grid gap-5 sm:grid-cols-2">
-          {managers.map((manager) => (
-            <div key={manager.name} className="group rounded-3xl bg-slate-950/90 p-6 text-center shadow-[0_20px_80px_rgba(0,0,0,0.18)] transition duration-300 hover:-translate-y-1">
-              <div className="mx-auto mb-6 h-32 w-32 overflow-hidden rounded-full bg-transparent ring-1 ring-white/10 transition-transform duration-300 group-hover:scale-110">
-                <Image
-                  src={manager.image}
-                  alt={manager.name}
-                  width={128}
-                  height={128}
-                  className="image-transition h-full w-full object-cover bg-transparent"
-                />
-              </div>
-              <p className="text-lg font-semibold text-white">{manager.name}</p>
-              <p className="mt-2 text-sm text-slate-400">{manager.role}</p>
-              <div className="mt-3 text-sm text-slate-300 max-w-lg mx-auto">{manager.experience}</div>
-            </div>
-          ))}
-        </div>
-      </section>
+      
     </main>
   );
 }

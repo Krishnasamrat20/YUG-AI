@@ -18,10 +18,10 @@ export default function IndustriesPage() {
   return (
     <main>
       <GlobalNav />
-      <HeroBanner title="Industries" subtitle="Industry-specific AI solutions" image="/images/img_industries.jpg" height={150} />
+      <HeroBanner title="AI Data Capabilities" subtitle="Annotation, Evaluation & AI Workflow Support" image="/images/img_industries.jpg" height={150}/>
       <section className="container py-12">
         <div className="space-y-4">
-          <p className="text-sm uppercase tracking-[0.28em] text-slate-400">Industries</p>
+          <p className="text-sm uppercase tracking-[0.28em] text-slate-400">Solutions</p>
           <h1 className="text-5xl font-semibold text-white">AI solutions tailored to your sector.</h1>
           <p className="max-w-3xl text-lg leading-8 text-slate-300">
             Create specialized pages for each industry so decision makers see the right AI use cases, quality controls, and production-ready workflows.
