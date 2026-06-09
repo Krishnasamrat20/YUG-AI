@@ -22,10 +22,10 @@ export default function ContactPage() {
                   Email
                 </p>
                 <a
-                  href="mailto:spriyesh008@gmail.com"
+                  href="mailto:hello@yugai.live"
                   className="mt-2 text-lg text-white hover:text-sky-300 transition-colors"
                 >
-                  spriyesh008@gmail.com
+                  hello@yugai.live
                 </a>
                 </div>
               <div className="card p-6">
