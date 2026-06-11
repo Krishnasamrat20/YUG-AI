@@ -9,28 +9,28 @@ import p4 from '../../p4.png';
 const founders = [
   {
     name: 'Priyesh Singh',
-    role: 'Chief Operating Officer',
+    
     detail:
       'Leads operations, client delivery, workflow optimization, and AI data production at scale.',
     image: p1
   },
   {
     name: 'Krishna Samrat Bajpai',
-    role: 'Chief Executive Officer',
+    
     detail:
       'Drives company vision, business strategy, partnerships, and overall growth initiatives.',
     image: p2
   },
   {
     name: 'Shreshth Bajpai',
-    role: 'Head of Growth',
+    
     detail:
       'Focused on market expansion, client acquisition, strategic partnerships, and branding.',
     image: p3
   },
   {
     name: 'Abhishek Singh',
-    role: 'Chief Technology Officer',
+    
     detail:
       'Leads engineering, AI development, automation systems, and technical architecture.',
     image: p4

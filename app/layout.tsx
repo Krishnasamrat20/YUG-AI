@@ -3,6 +3,7 @@ import type { ReactNode } from 'react';
 import './globals.css';
 import Footer from '@/components/Footer';
 
+
 export const metadata: Metadata = {
   title: 'YUG AI — AI Data Annotation & Development Partner',
   description: 'High-quality image, video, text, audio annotation and AI development delivered by trained specialists.'
