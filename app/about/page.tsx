@@ -111,9 +111,7 @@ export default function AboutPage() {
                 {founder.name}
               </h3>
 
-              <p className="mt-2 text-sky-400 font-medium">
-                {founder.role}
-              </p>
+              
 
               <p className="mt-4 text-sm leading-7 text-slate-300">
                 {founder.detail}
