@@ -60,7 +60,7 @@ export default function Navbar() {
 
         {/* Mobile Menu Button */}
         <button
-          className="md:hidden text-white"
+          className="md:hidden text-white relative z-50"
           onClick={() => setIsOpen(!isOpen)}
           aria-label="Toggle Menu"
         >
@@ -70,7 +70,7 @@ export default function Navbar() {
 
       {/* Mobile Navigation */}
       {isOpen && (
-        <nav className="md:hidden bg-[#002F73] border-t border-white/10">
+        <nav className="md:hidden bg-[#002F73] border-t border-white/10 z-50 w-full">
           <div className="flex flex-col">
             {links.map((link) => (
               <Link
